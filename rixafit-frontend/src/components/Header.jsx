@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import Logo from "/src/assets/LogoRixa.svg";
+import Logo from "/LogoRixa.svg"; 
+
 
 export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -10,12 +11,12 @@ export default function Header() {
     <div className="w-full fixed top-0 left-0 z-50 shadow">
       <div className="flex flex-col md:flex-row w-full bg-white">
         {/* Left Section (Logo) */}
-        <div className="w-full md:w-[20%] flex items-center justify-center border-r-4 border-[#971b1e] bg-[#F5F5F5]">
+        <div className="w-full md:w-[20%] flex items-center justify-center border-r-4 border-[#971b1e] ">
           <div className="flex items-center justify-center h-full px-4">
             <img
               src={Logo}
               alt="logo"
-              className="max-h-20 md:max-h-28 w-auto object-contain"
+              className="max-h-20 md:max-h-28 w-auto bg-[#E63946] object-contain"
             />
           </div>
         </div>
